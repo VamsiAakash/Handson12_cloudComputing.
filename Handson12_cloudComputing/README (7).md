@@ -1,3 +1,7 @@
+Student Details: 
+Name: Vamsi Aakash Samudrala
+Student id: 801425922
+
 # Hands-on-12-Spark-on-AWS
 # Serverless Spark ETL Pipeline on AWS
 
@@ -47,7 +51,10 @@ Create two S3 buckets:
 
 **Screenshot: S3 Buckets Created**
 
-![S3 Buckets](output1.png)
+
+
+/Users/vamsiaakash/Desktop/Output1.png
+
 
 ---
 
