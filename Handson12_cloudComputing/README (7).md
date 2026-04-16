@@ -11,7 +11,7 @@ The pipeline automatically ingests raw CSV product review data, processes it usi
 
 ---
 
-## 📊 Project Overview
+##  Project Overview
 
 The core problem this project solves is the need for manual data processing. In a typical scenario, data lands in S3 and waits for a data engineer to run a job. This project automates that entire workflow.
 
@@ -24,7 +24,7 @@ The core problem this project solves is the need for manual data processing. In 
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 **Data Flow:**
 `S3 (Upload) -> Lambda (Trigger) -> AWS Glue (Spark Job) -> S3 (Processed Results)`
@@ -64,7 +64,8 @@ Upload the `reviews_cleaned.csv` file to the `handsonfinallandingggg` bucket.
 
 **Screenshot: CSV file uploaded to landing bucket**
 
-![Landing Bucket](output2.png)
+<img width="1710" height="1107" alt="output2" src="https://github.com/user-attachments/assets/f1f1aea2-6822-40ee-9065-a62dad139f1c" />
+
 
 ---
 
@@ -77,7 +78,10 @@ Upload the `reviews_cleaned.csv` file to the `handsonfinallandingggg` bucket.
 
 **Screenshot: IAM Role for Lambda**
 
-![IAM Role](output4.png)
+<img width="1710" height="1107" alt="output3" src="https://github.com/user-attachments/assets/a1246737-2bd5-4e0f-9f24-a8d0c59143df" />
+
+
+
 
 ---
 
@@ -92,13 +96,9 @@ Upload the `reviews_cleaned.csv` file to the `handsonfinallandingggg` bucket.
 
 **Screenshot: Glue Job Succeeded**
 
-![Glue Job Succeeded](output33.png)
+<img width="1710" height="1107" alt="output33" src="https://github.com/user-attachments/assets/159f59a7-eb13-4daa-a14c-8a66c4765626" />
 
-**Screenshot: Glue Job Run Details**
 
-![Glue Job Run Details](output3.png)
-
----
 
 ### 5. Create the Lambda Trigger Function
 
@@ -110,7 +110,9 @@ Upload the `reviews_cleaned.csv` file to the `handsonfinallandingggg` bucket.
 
 **Screenshot: Lambda Function Code**
 
-![Lambda Function](lambda.png)
+<img width="1710" height="1107" alt="lambda" src="https://github.com/user-attachments/assets/91f8969f-72db-48ab-b511-2d5945f6e7f4" />
+
+<img width="1710" height="1107" alt="output4" src="https://github.com/user-attachments/assets/1201d993-9705-47cb-8190-7a6300972875" />
 
 ---
 
@@ -120,19 +122,22 @@ After the Glue job succeeds, navigate to the `handsonfinalprocessedddd` bucket t
 
 **Screenshot: Processed Bucket with Output Folders**
 
-![Processed Bucket](output5.png)
+<img width="1710" height="1107" alt="output5" src="https://github.com/user-attachments/assets/466752b1-098e-4c4d-ac75-2dda290d16d2" />
+
 
 **Screenshot: Athena Results Folder Contents**
 
-![Athena Results](output6.png)
+<img width="1710" height="1107" alt="output6" src="https://github.com/user-attachments/assets/1d702cb4-13df-4077-8131-0c6639dd7bdc" />
+
 
 **Screenshot: Processed Data Folder**
 
-![Processed Data](output7.png)
+  <img width="1710" height="1107" alt="output7" src="https://github.com/user-attachments/assets/ade15b05-11bc-479f-ba9a-1c68d5bffb82" />
+
 
 ---
 
-## 🚀 How to Run the Pipeline
+##  How to Run the Pipeline
 
 Your pipeline is now fully deployed and automated!
 
@@ -143,7 +148,7 @@ Your pipeline is now fully deployed and automated!
 
 ---
 
-## 📈 Query Results
+## Query Results
 
 After the job completes, navigate to `handsonfinalprocessedddd`. Results are in the `Athena Results/` folder:
 
@@ -154,7 +159,7 @@ After the job completes, navigate to `handsonfinalprocessedddd`. Results are in 
 
 ---
 
-## 🧹 Cleanup
+##  Cleanup
 
 To avoid future charges, delete the following resources:
 1. Empty and delete `handsonfinallandingggg` and `handsonfinalprocessedddd` S3 buckets
