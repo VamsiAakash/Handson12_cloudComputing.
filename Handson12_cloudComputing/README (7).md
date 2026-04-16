@@ -1,5 +1,7 @@
 Student Details: 
+
 Name: Vamsi Aakash Samudrala
+
 Student id: 801425922
 
 # Hands-on-12-Spark-on-AWS
