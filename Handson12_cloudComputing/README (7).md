@@ -52,8 +52,8 @@ Create two S3 buckets:
 **Screenshot: S3 Buckets Created**
 
 
+<img width="1710" height="1107" alt="Output1" src="https://github.com/user-attachments/assets/d377f238-9bca-44fa-a7bc-ee31d4ad5305" />
 
-/Users/vamsiaakash/Desktop/Output1.png
 
 
 ---
